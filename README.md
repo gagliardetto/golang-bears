@@ -4,6 +4,10 @@
 
 Initial API draft of golang-bears, an adapted golang version of python pandas.
 
+### Contributions
+
+Want to help bring pandas to Golang? Fork this repo or open issues and make your suggestions.
+
 ### Read CSV
 
 ```go
