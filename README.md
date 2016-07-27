@@ -36,38 +36,25 @@ df := gp.ReadCSV("data/file.csv")
 fmt.Println(df[10:21])
 ```
 
-### Compute Max on a column
+### Compute Max on one or more columns
 
 ```go
 df := gp.ReadCSV("data/file.csv")
-fmt.Println(df.Column("Volume").Max())
-
-// OR
-
-fmt.Println(df.Columns([]string{"Volume","Price"}).Max())
-
+fmt.Println(df.Columns("Volume","Price").Max())
 ```
 
 ### Compute Min on a column
 
 ```go
 df := gp.ReadCSV("data/file.csv")
-fmt.Println(df.Column("Volume").Min())
-
-// OR
-
-fmt.Println(df.Columns([]string{"Volume","Price"}).Min())
+fmt.Println(df.Columns("Volume","Price").Min())
 ```
 
 ### Compute Mean on a column
 
 ```go
 df := gp.ReadCSV("data/file.csv")
-fmt.Println(df.Column("Volume").Mean())
-
-// OR
-
-fmt.Println(df.Columns([]string{"Volume","Price"}).Mean())
+fmt.Println(df.Columns("Volume","Price").Mean())
 ```
 
 ### Create Date range
