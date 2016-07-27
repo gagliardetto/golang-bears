@@ -36,21 +36,21 @@ df := gp.ReadCSV("data/file.csv")
 fmt.Println(df[10:21])
 ```
 
-### Compute Max on one or more columns
+### Compute Max on one or more columns (individually)
 
 ```go
 df := gp.ReadCSV("data/file.csv")
 fmt.Println(df.Columns("Volume","Price").Max())
 ```
 
-### Compute Min on a column
+### Compute Min on one or more columns (individually)
 
 ```go
 df := gp.ReadCSV("data/file.csv")
 fmt.Println(df.Columns("Volume","Price").Min())
 ```
 
-### Compute Mean on a column
+### Compute Mean on one or more columns (individually)
 
 ```go
 df := gp.ReadCSV("data/file.csv")
